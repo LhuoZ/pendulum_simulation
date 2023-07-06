@@ -41,6 +41,8 @@ def change_coord2(*args):
     check_cart.config(state= "enabled")    
 
 
+    self.canvas = FigureCanvasTkAgg(self.fig, master=self)
+    self.canvas.get_tk_widget().grid(column=1,row=4, columnspan=2) 
 
 root = Tk()
 root.title("Simple Pendulum")
