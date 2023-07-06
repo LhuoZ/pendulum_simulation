@@ -95,7 +95,7 @@ class Simple_pendulum (Frame):
         self.trace, = self.ax.plot([], [], '.-', lw=1, ms=2)
 
         self.canvas = FigureCanvasTkAgg(self.fig, master=self)
-        self.canvas.get_tk_widget().grid(column=1,row=4, columnspan=2) 
+        self.canvas.get_tk_widget().grid(column=1,row=4, columnspan=5) 
 
 root = Tk()
 root.geometry("1200x600")
