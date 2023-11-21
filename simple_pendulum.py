@@ -34,6 +34,10 @@ class Simple_pendulum (Frame):
 
 
     def Animate (self):
+        self.canvas.get_tk_widget().forget()
+        self.ani.event_source.stop()
+        self.history_x.clear()
+        self.history_y.clear()
         def theta_derivative (x, t, L):
             return [x[1], (-g/L)*np.sin(x[0])]
         self.a = float(self.textAngle.get())
